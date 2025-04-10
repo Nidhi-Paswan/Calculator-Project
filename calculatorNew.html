@@ -2,7 +2,8 @@
     <head>
 <title> attractive calculator</title>
 <link rel="stylesheet" href="calculator.css">
-<script></script>
+<script src="script.js" defer></script>
+
     </head>
 
    <body>
@@ -38,13 +39,13 @@
 <br></br>
 
 
-<input type="button" value="c" onclick="form1.answer.value=''" class="button" style="background-color: #f99703; color: white;">
+<input type="button" value="c" onclick="clean()"  class="button" style="background-color: #f99703; color: white;">
 
 
-<input type="button"  class= "button"value="<" onclick="form1.answer.value=form1.answer.value.substring(0,form1.answer.value.length*1-1)" style="background-color:  #f99703; color: white;" >
-<input type="button"  class= "button"value="00" onclick="form1.answer.value+='00'">
+<input type="button"  class= "button"value="<" onclick="back()" style="background-color:  #f99703; color: white;" >
+<input type="button"  class= "button"value="00" onclick="insert('00')">
 
-<input type="button"  class= "operator"value="/" onclick="form1.answer.value+='/'" style="background-color:  #f6a542; color: white;">
+<input type="button"  class= "operator"value="/" onclick="insert('/')" style="background-color:  #f6a542; color: white;">
 <br></br>
 <input type="button" class= "button" value="7" onclick="form1.answer.value+='7'">
 <input type="button"  class= "button"value="8" onclick="form1.answer.value+='8'">
